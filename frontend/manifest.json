@@ -1,0 +1,35 @@
+{
+  "name": "PhishGuard",
+  "version": "1.0.01",
+  "description": "A phishing detector plugin",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "webNavigation",
+    "https://safebrowsing.googleapis.com/"
+  ],
+  "background": {
+    "service_worker": "js/bg-loader.js"
+  },
+  "action": {
+    "default_popup": "plugin_ui.html",
+    "default_icon": {
+      "16": "detective.png",
+      "48": "detective.png",
+      "128": "detective.png"
+    }
+  },
+  "icons": {
+    "16": "detective.png",
+    "48": "detective.png",
+    "128": "detective.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["js/features.js"]
+    }
+  ],
+  "manifest_version": 3
+}

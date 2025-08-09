@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PhishGuard</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Russo+One&display=swap">
+  <link href="plugin_ui.css" rel="stylesheet">
+</head>
+<body>
+  <div id="plugin_name">PhishGuard</div>
+
+  <div class="container">
+    <div class="status-box">
+      <h2 id="site_msg">This website is safe to use ✅</h2>
+      
+      <!-- ✅ Phishing Level -->
+      <div class="phishing-level">
+        <label>Phishing Risk Level:</label>
+        <span id="risk_level">7% (Low)</span>
+      </div>
+    </div>
+
+    <ul id="features">
+      <!-- Tags populated by JS -->
+    </ul>
+
+    <a href="/test.html">View model test results</a>
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/plugin_ui.js"></script>
+</body>
+</html>
